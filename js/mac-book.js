@@ -72,6 +72,9 @@ deliveryCost.addEventListener('click', function () {
 //Promo Code
 let promoInput = document.getElementById('promo-code');
 let promoButton = document.getElementById('apply-btn');
+promoButton.addEventListener('click', function () {
+    promoCode();
+})
 function promoCode() {
     if (promoInput.value == 'stevekaku') {
         total.innerText = parseInt(total.innerText) - (parseInt(total.innerText) * 0.2);

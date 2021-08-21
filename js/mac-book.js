@@ -77,7 +77,7 @@ promoButton.addEventListener('click', function () {
 })
 function promoCode() {
     if (promoInput.value == 'stevekaku') {
-        total.innerText = parseInt(total.innerText) - (parseInt(total.innerText) * 0.2);
+        total.innerText = parseFloat(total.innerText) - (parseFloat(total.innerText) * 0.2);
         promoInput.value = '';
     }
     else {
